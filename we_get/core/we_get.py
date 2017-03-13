@@ -12,6 +12,7 @@ from docopt import docopt
 from importlib import import_module
 from we_get.core.utils import format_help
 from we_get.core.utils import msg_error
+from we_get.core.utils import msg_warning
 from we_get.core.utils import msg_fetching
 from we_get.core.utils import list_wg_modules
 
@@ -115,6 +116,7 @@ class WGSelect(object):
     items = dict()
 
     if self.targets[0] == "all":
+      msg_warning("using 'all' is not recommended!")
       self.targets.pop()
       self.targets = list_wg_modules()
 
