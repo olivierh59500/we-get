@@ -177,10 +177,10 @@ class WG(object):
     return parg
 
   def parse_arguments(self):
-    self.arguments = docopt(__doc__)
+    self.arguments = docopt(__doc__, help=False)
     self.parguments = self.get_provided_arguments()
 
-    if not self.parguments:
+    if not self.parguments or '--help' in self.parguments:
       format_help(__doc__, None)
       exit(0)
     elif '--version' in self.parguments:
