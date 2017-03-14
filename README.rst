@@ -18,14 +18,14 @@ we-get: command-line tool for searching torrents.
 Installation
 ============
 
-run from the root folder
+* Option 1
 
 .. code-block:: bash
 
     $ sudo python setup.py install
 
 
-or with ``pip``
+* Option 2
 
 .. code-block:: bash
 
