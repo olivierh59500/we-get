@@ -35,9 +35,7 @@ Installation
 Dependencies
 ============
 
-* `prompt_toolkit <https://github.com/jonathanslenders/python-prompt-toolkit>`_, `docopt <https://github.com/docopt/docopt>`_, `colorama <https://github.com/tartley/colorama>`_
-
-and `Python <https://www.python.org/>`_ 3.5 or above
+`Python <https://www.python.org/>`_ 3.5 or above
 
 
 Basic Usage
