@@ -111,7 +111,7 @@ class WGSelect(object):
     def sort_items_by_name(self, items):
         return collections.OrderedDict(sorted(items.items())) 
 
-    def run(self, api_mode=False):
+    def run(self):
         items = dict()
 
         if self.targets[0] == "all":
@@ -120,7 +120,7 @@ class WGSelect(object):
             self.targets = list_wg_modules()
 
         for target in self.targets:
-            if not self.results_type and not api_mode:
+            if not self.results_type:
                 msg_fetching(target)
             path = "we_get.modules.%s" %(target)
             try:
@@ -145,10 +145,8 @@ class WGSelect(object):
             self.items = self.sort_items_by_name(self.items)
         else:
             self.items = self.sort_items_by_seeds(self.items)
-
-        if api_mode:
-            return self.items
-        elif self.results_type == 'J':
+        
+        if self.results_type == 'J':
             print(dumps(self.items, indent=2, sort_keys=True))
         elif self.results_type == 'L':
             [print(self.items[item]['link']) for item in self.items]
@@ -195,8 +193,6 @@ class WG(object):
             format_help(__doc__, "Use --search/--list with --target.")
             exit(1)
 
-    def start(self, api_mode=False):
+    def start(self):
         sel = WGSelect(self.parguments)
-        if api_mode:
-            return sel.run(api_mode)
         sel.run()
