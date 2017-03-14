@@ -12,6 +12,8 @@ from docopt import docopt
 from importlib import import_module
 from we_get.core.utils import format_help
 from we_get.core.utils import msg_error
+from we_get.core.utils import msg_info
+from we_get.core.utils import msg_err_trace
 from we_get.core.utils import msg_warning
 from we_get.core.utils import msg_fetching
 from we_get.core.utils import list_wg_modules
