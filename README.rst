@@ -38,6 +38,13 @@ Dependencies
 `Python <https://www.python.org/>`_ 3.5 or above
 
 
+Platforms
+==========
+
+* Linux
+* Mac
+* Windows
+
 Basic Usage
 ===========
 
@@ -92,6 +99,10 @@ and the list will grow.
 
 Contributing
 ------------
+
+Want to help with the development or test we-get on your platform?
+
+* We need windows user to test we-get on windows.
 
 Any collaboration is welcome!
 
