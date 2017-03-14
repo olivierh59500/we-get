@@ -86,14 +86,14 @@ def msg_error(msg, exit):
         @param msg : string.
         @param exit  : exit?
     """
-    sys.stdout.write("%s# error: %s\n" % (Fore.RED, msg))
+    sys.stdout.write("%s# error:%s %s\n" % (Fore.RED, Style.RESET_ALL, msg))
     if exit: sys.exit(1)
 
 def msg_info(msg):
     """ msg_info: info message.
         @param msg: string.
     """
-    sys.stdout.write("%s# %s\n" % (Fore.BLUE, msg))
+    sys.stdout.write("%s#%s %s\n" % (Fore.BLUE, Style.RESET_ALL, msg))
 
 def msg_warning(msg):
     """ msg_warning: show warning msg
