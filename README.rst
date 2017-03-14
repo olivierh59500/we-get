@@ -109,7 +109,15 @@ Any collaboration is welcome!
 If you want to write a module please see ``we_get/modules/``
 
 
+Legal
+------
+
+The author of this project is not responsible of what users will search.
+this tool will help you to search torrents, and will not download any torrents.
+
+downloading/searching torrents in not a crime (only the illegal ones :wink:)
+
 Licence
 -------
 
-MIT: `LICENSE <https://github.com/0xl3vi/we-get/blob/master/LICENSE>`_.
+`MIT <https://github.com/0xl3vi/we-get/blob/master/LICENSE>`_.
