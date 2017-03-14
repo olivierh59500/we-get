@@ -136,7 +136,9 @@ class WGSelect(object):
                 self.items.update(items)
             else:
                 msg_error(" \'%s\' - no results" % (target), False)
-    
+   
+        if not self.items:
+            return
         if self.filter:  
             self.items = self.filter_items(self.filter)
         if self.results:
