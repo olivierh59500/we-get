@@ -21,7 +21,6 @@ COLORS = {"red" : Fore.RED,
   "white" : Fore.WHITE
 }
 
-
 def format_help(doc, errmsg):
     """ format_help: fix help message.
         @param doc: usage string.
