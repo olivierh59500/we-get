@@ -7,8 +7,11 @@ import sys
 from we_get.core.we_get import WG
 from we_get.core.utils import msg_error
 from we_get.core.utils import msg_err_trace
+from we_get.core.tests import Tests
 
 def main():
+    test = Tests()
+    test.init()
     we_get = WG()
     we_get.parse_arguments()
     try:
